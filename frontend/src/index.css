@@ -1,0 +1,397 @@
+/* global CSS */
+.head {
+  background-color: #004643;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: space-evenly;
+}
+body {
+  font-style: normal;
+  background-color: #004643;
+  font-family: "Montserrat",sans-serif;
+}
+.App-header {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  max-height: 250px;
+  background-color: #004643;
+  justify-content: space-between;
+  font-family: "Montserrat",sans-serif;
+}
+.h1 {
+  color: #f9bc60 ;
+  font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+  font-weight: bold ;
+  font-size: 80px;
+  margin: 0px;
+  margin-left:50px;
+}
+.h2 {
+  font-size: large;
+  margin: 0px;
+}
+.App {
+  text-align: center;
+  background-color: #004643;
+  color: #f9bc60;
+}
+/* this list items cover the navigation link in the header */
+.mustHave{
+  display: flex;
+  flex-direction: column;
+}
+.passwordRequired{
+  padding-bottom: 5px;
+}
+
+.passwordListItem{
+  padding-bottom: 5px;
+}
+ul{ 
+  display: flex;
+  flex-direction: row;
+  color: #004643;
+}
+li {
+  list-style: none;
+  padding: 30px;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  transform: scale(1.1);
+  /* background-color: rgba(211, 211, 211, 0.208);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+a:link {
+  color: #f9bc60 ;
+}
+a:visited {
+  color: #f9bc60 ;
+}
+  /* a:hover {
+    color: #f9bc60 ;
+    transform: scale(1.1)
+  } */
+a:active {
+  color: #f9bc60;
+}
+.category-dropdown {
+  background-color: #004643;
+}
+.category-list{
+  cursor: pointer;
+}
+
+/* sign out button in the header */
+.signOutButton{
+  background: none;
+  border: none;
+  font-size: 25px;
+  font-family: "Montserrat",sans-serif; ;
+  color: #f9bc60;
+  cursor: pointer;
+  /* text-align: center;
+  align-self: center;
+  height: 30px; */
+  display: inline-block
+}
+.signOutButton:hover {
+  transform: scale(1.1);
+  /* background-color: rgba(211, 211, 211, 0.208);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+/* The mulitple choice boxes on add event and filter */
+select{
+  outline-color: #004643;
+  width: 300px;
+  height:46px;
+  background-color: #abd1c6;
+  margin-bottom: 10px;
+  border-radius: 5px;
+ }
+select option{
+  background-color: #abd1c6;
+}
+option:active{
+  background-color: #f9bc60;
+}
+object:hover{
+  background-color: #abd1c6;
+}
+
+/* covers all form button. exc sign out button */
+.button {
+  background-color: #004643;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color:#d5d9d9;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat",sans-serif;
+  font-size: 15px;
+  /* line-height: 29px; */
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 80px;
+  height: 40px
+}
+.button:hover {
+  background-color: #abd1c6;
+  color:#000000;
+  border: 1px solid #000000;
+}
+.button:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.swal2-styled.swal2-confirm {
+  border: 0 !important;
+  border-radius: 0.25em !important;
+  background-color: #004643 !important;
+  border: 1px solid #d5d9d9 !important;
+  color:#d5d9d9 !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0 !important;
+  box-sizing: border-box !important;
+}
+.swal2-styled.swal2-cancel {
+  border: 0 !important;
+  border-radius: 0.25em !important;
+  background-color: #e16162 !important;
+  border: 1px solid #d5d9d9 !important;
+  color:#d5d9d9 !important;
+  font-size: 1em !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0 !important;
+  box-sizing: border-box !important;
+}
+.swal2-styled.swal2-confirm:hover {
+  background-color: #abd1c6 !important;
+  color:#000000 !important;
+  border: 1px solid #000000 !important;
+}
+.swal2-styled.swal2-cancel:hover {
+  background-color: #e7c2c2 !important;
+  color:#000000 !important;
+  border: 1px solid #000000 !important;
+}
+.swal2-styled.swal2-confirm:focus {
+  border-color: #008296 !important;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0 !important;
+  outline: 0 !important;
+}
+.swal2-styled.swal2-cancel:focus {
+  border-color: #de7f96 !important;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0 !important;
+  outline: 0 !important;
+}
+.swal2-container.swal2-center>.swal2-popup{
+  background-color: #d5d9d9
+}
+.nav-bar {
+  font-size: 9px;
+}
+
+/* adjusts the css based on the screen size */
+@media screen and (max-width: 950px) {
+  .App-header {
+    flex-direction: column;
+    background-color: #004643;
+  }
+  .signOutButton{
+    font-size: 20px;
+  }
+  ul{
+    display: flex;
+    color: #f9bc60;
+    position: relative;
+    margin: 0px;
+    padding-inline-start: 0px;
+  }
+  li {
+    list-style: none;
+    padding: 6px;
+    font-size: 20px;
+  }
+  .nav {
+    display: flex;
+    align-self: center;
+    margin: 5px;
+    padding-inline-start: 0px;
+  }
+  .h1 {
+    color: #f9bc60 ;
+    font-size: 50px;
+    font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+    font-weight: bold ;
+    padding-left: 5px;
+    margin: 0px;
+  }
+}
+/* for the login, sign up and add new event forms */
+.form-container{
+  background: #e8e4e6;
+  border-radius: 5px;
+  padding-bottom: 80px 
+}
+.login-container{
+  background: #e8e4e6;
+  border-radius: 5px;
+  padding-bottom: 180px 
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #e8e4e6;
+  color:#004643;
+  border-radius: 5px;
+  font-family: "Montserrat",sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 5px 17px 50px 5p rgba(0,0,0,0.19);
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  max-width:500px;
+  width:50%;
+  margin:20px auto;
+  padding:15px;
+  background:#abd1c6;
+  color:#004643;
+  border:0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.form-control:focus{
+  outline-color: #004643;
+  box-shadow:#abd1c6 ;
+}
+.form-group{
+  cursor: pointer;
+}
+.oneEvent{
+  background-color: #abd1c6;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black;
+  font-family: "Montserrat",sans-serif;
+}
+.event-container{
+  padding-bottom: 50px
+}
+.image-container{
+  height: 200px;
+  width: 300px;
+}
+.one-image-container{
+  display: inline-block;
+  max-height: 30%;
+  max-width: 60%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+input{
+  border-radius: 5px;
+  font-family: "Montserrat",sans-serif;
+}
+textarea{
+  border-radius: 5px;
+  font-family: "Montserrat",sans-serif;
+}
+/* for the event cards on the homepage */
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.card {
+  text-align: left;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #abd1c6;
+  color: black;
+  font-family: sans-serif;
+}
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0px;
+}
+.cardText{
+  margin: 5px;
+}
+#EditEventForm{
+  padding: 1%;
+}
+.search {
+  display: flex;
+  position: relative;
+  background-color: #004643;
+  padding-bottom: 10px; 
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+/* For the serch bar on the homepage */
+  .search input {
+    background-color: #abd1c6;
+    border:0;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 18px;
+    height:30px;
+    width: 250px;
+    padding-left: 20px;
+    box-shadow: black;
+    border-radius: 5px;
+  }
+.dataResult {
+  white-space: nowrap ;
+  font-size: 18px;
+  margin-top: 5px;
+  width: 300px; 
+  height: 200px; 
+  background-color: #abd1c6;
+  overflow: hidden;
+  overflow-y: auto;
+  align-self: center;    
+}
+.dataResult .dataItem {
+  color: black;
+  align-items: center;
+  display: flex;
+  width: 90px;
+  height: 50px;
+}
+.dataItem p {
+  margin-left: 10px;
+}
+.js-is-hidden{
+  display: none;
+}
